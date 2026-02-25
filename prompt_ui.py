@@ -9,4 +9,5 @@ st.header("Research app")
 user_input = st.text_input("enter your text")
 
 if st.button("Submit"):
-    st.text("Enter random text")
+    result = model.invoke(user_input)
+    st.write(result.content)
