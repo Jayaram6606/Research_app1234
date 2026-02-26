@@ -24,7 +24,7 @@ prompt = template.invoke({
                           
     'paper_input': paper_input,
     'length_input' : length_input,
-    'style_inpiut' : style_input
+    'style_input' : style_input
 })
 
 
