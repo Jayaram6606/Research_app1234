@@ -29,5 +29,5 @@ prompt = template.invoke({
 
 
 if st.button("Submit"):
-    reuslt = model.invoke(prompt)
-    st.write(reuslt)
+    result = model.invoke(prompt)
+    st.write(result.content)
