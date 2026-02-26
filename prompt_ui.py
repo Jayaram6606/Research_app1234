@@ -20,6 +20,14 @@ length_input = st.selectbox( "Select Explanation Length", ["Short (1-2 paragraph
 
 template = load_prompt('template.json')
 
+prompt = template.invoke({
+                          
+    'paper_input': paper_input,
+    'length_input' : length_input,
+    'style_inpiut' : style_input
+})
+
 
 if st.button("Submit"):
-    st.write("hello")
+    reuslt = model.invoke(prompt)
+    st.write(reuslt)
